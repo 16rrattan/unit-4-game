@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jewel Collector</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Added a link to our external stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav></nav>
+    <div class="container">
+        <div class="row justify-content-center" id="instructions">
+            <p>click on the jewels below to reach the target number. Each jewels is worth a different amount. See if you can figure it out.</p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div><span id="result"></span></div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div>Total Wins: <span id="wins"></span></div>
+        </div>
+        <div class="row justify-content-center">
+            <div>Total Losses: <span id="losses"></span></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div>Try to reach this number: <span id="randomnum"></span></div>
+        </div>
+        <div class="row justify-content-center">
+            <div>You are currently at: <span id="user"></span></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <img src="images/red.jpg" height="200" width="200" onclick="buttred()">
+        </div>
+        <div class="col-3">
+            <img src="images/blue.jpg" height="200" width="200" onclick="buttblue()">
+        </div>
+        <div class="col-3">
+            <img src="images/yellow.jpg" height="200" width="200" onclick="buttyellow()">
+        </div>
+        <div class="col-3">
+            <img src="images/green.jpg" height="200" width="200" onclick="buttgreen()">
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="java/game.js">
+    </script>
+
+</body>
+
+</html>
